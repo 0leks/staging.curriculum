@@ -23,5 +23,5 @@ This is the branch that mirrors the state of the `master` branch on the upstream
 
 ## TODO
 - Set up auto-merges
-  - Merge `mirror` into `hosted`
+  - ~~Merge `mirror` into `hosted`~~
   - Merge upstream/master into mirror
