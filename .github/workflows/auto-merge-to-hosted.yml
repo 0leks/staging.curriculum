@@ -15,7 +15,13 @@ jobs:
     if: (github.event_name == 'push') || (github.event_name == 'workflow_dispatch') || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
     runs-on: ubuntu-latest
     steps:
-      - name: Merge mirror into hosted
+      - name: git checkout
+          uses: actions/checkout@v2
+          with:
+            token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+            ref: 'hosted'
+            fetch-depth: 0
+      - name: git merge mirror into hosted
         run: |
           git config --global user.email "${GITHUB_ACTOR}"
           git config --global user.name "${GITHUB_ACTOR}@users.noreply.github.com"
