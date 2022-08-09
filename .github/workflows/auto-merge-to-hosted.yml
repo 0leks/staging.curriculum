@@ -18,7 +18,7 @@ jobs:
       - name: git checkout
         uses: actions/checkout@v2.4.2
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ GITHUB_TOKEN  }}
           ref: 'hosted'
           fetch-depth: 0
       - name: git merge mirror into hosted
