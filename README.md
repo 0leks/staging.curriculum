@@ -22,6 +22,6 @@ This is the branch that mirrors the state of the `master` branch on the upstream
 
 
 ## TODO
-- Set up auto-merges
+- Set up auto-merges (https://www.jessesquires.com/blog/2021/10/17/github-actions-workflows-for-automatic-rebasing-and-merging/)
   - ~~Merge `mirror` into `hosted`~~
   - Merge upstream/master into mirror
