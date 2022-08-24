@@ -1,6 +1,6 @@
 # Oleks' fork of the League's curriculum website.
 
-This repo is used to validate changes to the curriculum website in as close of an environment as possible.
+This repo is used to validate changes to the curriculum website in as similar of an environment as possible.
 
 ## How to use this repo
 
